@@ -7,8 +7,9 @@ function binaryToDecimal(binary){
     let sum =0;
 
     for(let i = 0; i<=binary.length-1;i++){
-        sum = sum + ( Number(binary.charAt(i)) ) * (2**(binary.length-1-i));
+        sum = sum + ( Number(binary.charAt(i)) ) *  Math.pow(2,binary.length-1-i);
         
     }
     return sum ;
+
 }
